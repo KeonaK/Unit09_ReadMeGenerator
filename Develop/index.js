@@ -3,20 +3,6 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./Develop/utils/generateMarkdown.js");
 
-// TODO: Create an array of questions for user input
-const questions = [
-   
-];
- 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
-
 inquirer
   .prompt([
     {type: "input",
@@ -29,7 +15,7 @@ inquirer
 },
 
     {type:"input",
-    message: "What is required to install your project?",
+    message: "What command is used to install dependencies?",
     name: "installation"
 },
     {type:"input",
@@ -41,7 +27,7 @@ inquirer
     name: "contributing"
 },
     {type: "input",
-    message: "What is needed to run a test on your project?",
+    message: "What command is needed to run a test on your project?",
     name: "tests"
 },
     {type: "list",
@@ -64,4 +50,22 @@ inquirer
     fs.writeFile(filename,  (err) =>
       err ? console.log(err) : console.log('Success!')
     );
-  })
+
+
+    
+})
+
+
+// // TODO: Create an array of questions for user input
+// const questions = [
+   
+// ];
+ 
+// // TODO: Create a function to write README file
+// function writeToFile(fileName, data) {}
+
+// // TODO: Create a function to initialize app
+// function init() {}
+
+// // Function call to initialize app
+// init();

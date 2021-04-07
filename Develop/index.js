@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateMark = require("./utils/generateMarkdown.js");
+const generateMarkdown = require("./Develop/utils/generateMarkdown.js");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -51,12 +51,11 @@ inquirer
 },
     {type: "input",
     message: "What is your GitHub username?",
-    name: "lincense"
-}
-    {type: "list",
-    message: "Which license does your project use?",
-    choices: ['MIT', 'APACHE_2.0', 'GPL_3.0', 'BSD_3', 'None' ],
-    name: "lincense"
+    name: "username"
+},
+    {type: "input",
+    message: "What is your email address?",
+    name: "email"
 }
   ])
   .then((data) => {

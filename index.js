@@ -1,10 +1,14 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateMarkdown = require("./Develop/utils/generateMarkdown.js");
+const generateFile = require("./utils/generateMarkdown")
+const util = require('util');
 
-inquirer
-  .prompt([
+const writeFileAsync = util.promisify(fs.writeFile);
+
+const promptUser = () => {
+
+    return  inquirer.prompt([
     {type: "input",
     message: "What is the title of your project?",
     name: "title",
@@ -43,17 +47,19 @@ inquirer
     message: "What is your email address?",
     name: "email"
 }
-  ])
-  .then((data) => {
-    const filename = 
+  ]);
+};  
 
-    fs.writeFile(filename,  (err) =>
-      err ? console.log(err) : console.log('Success!')
-    );
+// const generate = generateFile.generateMarkdown();
 
-
-    
-})
+const init = () => {
+    promptUser()
+      .then((data) => writeFileAsync('README.md', JSON.stringify(data)))
+      .then(() => console.log('Successfully generated a README'))
+      .catch((err) => console.error(err));
+  };
+  
+  init();
 
 
 // // TODO: Create an array of questions for user input

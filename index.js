@@ -50,11 +50,11 @@ const promptUser = () => {
   ]);
 };  
 
-// const generate = generateFile.generateMarkdown();
+// const generate = generateFile.generateMarkdown(data);
 
 const init = () => {
     promptUser()
-      .then((data) => writeFileAsync('README.md', JSON.stringify(data)))
+      .then((data) => writeFileAsync('README.md', generateFile(data)))
       .then(() => console.log('Successfully generated a README'))
       .catch((err) => console.error(err));
   };

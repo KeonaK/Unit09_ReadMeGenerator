@@ -1,53 +1,45 @@
-#  Unit09 README Generator
-  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg);
+# Unit09 README Generator
 
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-  ## Description
+## Description
 
-  undefined
+undefined
 
+## Table of contents
 
-  ## Table of contents
-  
-  * [Description](#description)
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [License](#license)
-  * [Questions](#questions)
-  
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [License](#license)
+- [Questions](#questions)
 
-  ## Installation
+## Installation
 
-  To install necessary dependencies, run the following command:
-  
+To install necessary dependencies, run the following command:
 
-  npm install
- 
+npm install
 
-  ## Usage
+## Usage
 
-  node index.js
+node index.js
 
+## Contributing
 
-  ## Contributing
+n/a
 
-  n/a
+## Tests
 
+To run tests, run the following command:
 
-  ## Tests
+node index.js
 
-  To run tests, run the following command:
+## License
 
-  node index.js
+This project is licensed under the MIT license.
 
+## Questions
 
-  ## License
-
-  This project is licensed under the MIT license.
-
-
-  ## Questions 
-
-If you have any questions about the repo, open an issue or contact me directly at keonakirby@gmail.com. You can find more of my work at https://github.com/KeonaK 
+If you have any questions about the repo, open an issue or contact me directly at keonakirby@gmail.com. You can find more of my work at https://github.com/KeonaK

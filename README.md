@@ -1,10 +1,14 @@
-# Unit09 README Generator
+# 09 README Generator
 
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description
 
-undefined
+A simple tool to dynamically generate a readme file for the user
+
+## Screencast
+
+https://drive.google.com/file/d/16luhlTSBo8t7BfWDVbPedbgQ0XO00OvS/view
 
 ## Table of contents
 

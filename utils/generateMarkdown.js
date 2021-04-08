@@ -20,7 +20,7 @@ function generateMarkdown(data) {
 
   ## Description
 
-  ${data.desciption}
+  ${data.description}
 
 
   ## Table of contents
